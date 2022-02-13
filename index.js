@@ -24,7 +24,7 @@ function getTimeRemaining(endtime){
 const timer = setInterval(() => {
     var count = getTimeRemaining(deadline)
     if(count.minutes < 0 ){
-      countDown.innerHTML = '<img id=\'inv\'src=\'/img/inv.png\'>' 
+      countDown.innerHTML = '<img id=\'inv\'src=\'/img/inv.png\'> <h6> אבל בנתיים בואי למטה מחכה לך הפתעה</h6> <h2 id="gift">🎁</h2>' 
       clearInterval(timer)
       console.log('happy velentine :)')
     }
